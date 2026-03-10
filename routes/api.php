@@ -16,3 +16,4 @@ Route::apiResource('login',LoginController::class)->only(['store']);
 Route::middleware('auth:sanctum')->group(function (){
     Route::post('/logout',[LoginController::class,'logout'])->name('logout');
 });
+
